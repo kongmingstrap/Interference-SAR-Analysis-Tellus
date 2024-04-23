@@ -65,7 +65,9 @@ $ python src/process_1.py
 
 ## 2. Output intensity and phase images
 
-TBD
+```bash
+$ python src/process_2.py
+```
 
 ## 3. Image alignment and interference processing
 

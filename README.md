@@ -60,18 +60,23 @@ $ export TELLUS_API_ACCESS_TOKEN="<YOUR Tellus API ACCESS TOKEN>"
 ## 1. Find coherent pairs
 
 ```bash
+$ mkdir processed_1
 $ python src/process_1.py
 ```
 
 ## 2. Output intensity and phase images
 
 ```bash
+$ mkdir processed_2
 $ python src/process_2.py
 ```
 
 ## 3. Image alignment and interference processing
 
-TBD
+```bash
+$ mkdir processed_3
+$ python src/process_3.py
+```
 
 ## 4. Remove track stripes and extract terrain change information
 

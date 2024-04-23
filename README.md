@@ -1,12 +1,13 @@
 Interference SAR analysis by Tellus
 =======
 
+https://www.tellusxdp.com/ja/
+
 # Requirements
 
 # Development
 
 - [pyenv](https://github.com/pyenv/pyenv)
-- [localstack](https://github.com/localstack/localstack)
 
 ### Install [pyenv](https://github.com/pyenv/pyenv)
 

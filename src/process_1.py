@@ -109,7 +109,7 @@ def download_files(
 def main():
     token = os.environ['TELLUS_API_ACCESS_TOKEN']
     # 博多駅の座標
-    lat = 33.590  # 緯度
+    lat = 33.589  # 緯度
     lon = 130.420  # 経度
     # 観測データの検索
     searched_data = data_search_palsar_l11(
@@ -136,11 +136,11 @@ def main():
     data_list = []
     for data in searched_data.get("features"):
         prop = data["properties"]
-        if (prop["sat:relative_orbit"] == 420  # 衛星の軌道経路
-                and prop["sat:orbit_state"] == "ascending"  # 衛星の進行方向
+        if (prop["sat:relative_orbit"] == 75 # 衛星の軌道経路
+                and prop["sat:orbit_state"] == "descending" # 衛星の進行方向
                 and prop["sar:observation_direction"] == "right"  # 電波照射方向
-                and prop["view:off_nadir"] == 21.5  # オフナディア角
-                and prop["tellus:sat_frame"] == 660  # 観測範囲の中心位置
+                and prop["view:off_nadir"] == 34.3 # オフナディア角
+                and prop["tellus:sat_frame"] == 2940 # 観測範囲の中心位置
                 and prop["sar:polarizations"] == "HH"  # 送受信の偏波  
                 and prop["sar:instrument_mode"] == "H"  # 観測モード
             ):
